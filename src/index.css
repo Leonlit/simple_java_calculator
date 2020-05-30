@@ -1,0 +1,33 @@
+Button {
+    -fx-text-fill: white;
+    -fx-background-color: rgb(54, 57, 62);
+    -fx-border-radius: 0;
+    -fx-border-width: 2;
+    -fx-border-color: rgb(74, 77, 82);
+    -fx-cursor: hand;
+    -fx-font-weight: regular;
+    -fx-font-size:18;
+    -fx-font-family:"san-serif";
+}
+
+Button:hover {
+    -fx-background-color: rgb(34, 37, 42);
+    -fx-font-weight: bold;
+    -fx-font-size: 24;
+}
+
+TextField {
+    -fx-text-fill: white;
+    -fx-background-color: rgb(54, 57, 62);
+    -fx-border-radius: 0;
+    -fx-border-width: 3;
+    -fx-font-size:24;
+    -fx-font-weight: bold;
+    -fx-border-color: rgb(74, 77, 82);
+}
+
+VBox {
+    -fx-background-color: rgb(74, 77, 82);
+    -fx-border-width: 10;
+    -fx-border-insets: 20;
+}
