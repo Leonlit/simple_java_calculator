@@ -1,5 +1,6 @@
-package firstapp;
+package calculator;
 
+import java.net.URL;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -13,7 +14,6 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
-import javafx.scene.input.KeyEvent;
 
 public class WindowSetup extends Application {    
     public static void startApp(String args[]) {
@@ -90,13 +90,16 @@ public class WindowSetup extends Application {
         }
         
         VBox root = new VBox();
-        VBox.setMargin(buttonPad, new Insets(5,5,0,5));
         VBox.setMargin(answer, new Insets(5,0,0,0));
+        VBox.setMargin(buttonPad, new Insets(5,5,0,5));
+       
         root.getChildren().add(answer);
         root.getChildren().add(buttonPad);
         
-        Scene scene = new Scene(root, 300, 530);
-        scene.getStylesheets().add("index.css");
+        Scene scene = new Scene(root, 310, 535);
+        URL url = getClass().getResource("/index.css");
+        String css = url.toExternalForm(); 
+        scene.getStylesheets().add(css);
         
         primaryStage.setTitle("calculator");
         primaryStage.setScene(scene);

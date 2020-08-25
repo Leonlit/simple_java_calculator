@@ -1,4 +1,4 @@
-package firstapp;
+package calculator;
 import java.util.ArrayList;
 /**
  *
