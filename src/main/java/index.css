@@ -5,7 +5,7 @@ Button {
     -fx-border-width: 2;
     -fx-border-color: rgb(74, 77, 82);
     -fx-cursor: hand;
-    -fx-font-weight: regular;
+    font-weight: regular;
     -fx-font-size:18;
     -fx-font-family:"san-serif";
 }
